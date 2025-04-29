@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>JavaScript Currency Converter</h1>
+            <p class="sub-heading">
+                Created by <a href="https://www.linkedin.com/in/daksh-lakhi" class="name-link">Daksh Lakhi</a>
+              </p>
+        </div>
+        <div class="convertor">
+            <div class="amount">
+                <label for="amt">Enter Amount:</label>
+                <input id="amt" placeholder="10000">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select name="from">
+                        </select>
+                    </div>
+                </div>
+                <div class="icon" onclick="swapCurrencies()">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                        <select name="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="msg">
+        <p>1USD=80INR</p>
+        <button class="button" onclick="ExchangeRate()">Get Exchange Rate</button>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
